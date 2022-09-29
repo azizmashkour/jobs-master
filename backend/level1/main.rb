@@ -29,7 +29,7 @@ class OutputService
       if (car["id"] == rental["car_id"])
         <<-RETURN
          sum of (the number of rental days multiplied by the car's price per day)
-         in addtion to (the number of km multiplied by the car's price per km).
+         in addition to (the number of km multiplied by the car's price per km).
         RETURN
         count       = get_price_per_date(car, rental) + get_price_per_km(car, rental)
       end
